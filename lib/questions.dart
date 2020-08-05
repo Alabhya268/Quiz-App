@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Questions extends StatelessWidget {
@@ -5,6 +6,16 @@ class Questions extends StatelessWidget {
   Questions(this.questionText);
   @override
   Widget build(BuildContext context) {
-    return Text(questionText);
+    return Container(
+      width: double.infinity,
+      margin: EdgeInsets.all(10),
+      child: Text(
+        questionText,
+        style: TextStyle(
+          fontSize: 28,
+        ),
+        textAlign: TextAlign.center,
+      ),
+    );
   }
 }
